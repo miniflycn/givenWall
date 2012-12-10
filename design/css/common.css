@@ -1,0 +1,42 @@
+﻿/*
+Theme Name: Common Index
+Author: WhiteSnow
+Author URI: http://www.justany.net/wordpress
+*/
+
+/* Reset default browser CSS. */
+body{
+	font-family:"微软雅黑",Arial,Helvetica,sans-serif,"宋体";
+	font-size:12px;
+	cursor:default;
+	background:#9edaff;
+}
+
+#sky{
+	width:800px;
+	min-height:1000px;
+	background:#f9fcff url(../background.jpg) no-repeat;
+	margin:auto;
+}
+
+
+/* Buttons */
+#buttons{
+	width:80px;
+	height:120px;
+	/*background:#fff;*/
+	float:right;
+}
+
+.button{
+	width:80px;
+	height:40px;
+}
+
+.buttonImg{
+	vertical-align:middle;
+}
+
+.buttonText{
+	font-size:16px;
+}
