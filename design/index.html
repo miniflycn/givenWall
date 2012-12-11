@@ -2,15 +2,61 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh" lang="zh" dir="ltr">
 <head>
 <title>givenWall</title> 
-<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<script>
+	var $ = function(__id){
+		return document.getElementById(__id);
+	}
+
+	function init(){
+		var timeout = -1;
+		$("buttons").onmouseover = function(){
+			$("buttons").style.left = "740px";
+		};
+		$("buttons").onmouseout = function(){
+			$("buttons").style.left = "800px";
+		};
+		$("button0").onmouseover = function(){
+			$("button0").className = "buttonShow";
+		};
+		$("button0").onmouseout = function(){
+			$("button0").className = "button";
+		};
+		$("button1").onmouseover = function(){
+			$("button1").className = "buttonShow";
+		};
+		$("button1").onmouseout = function(){
+			$("button1").className = "button";
+		};
+		$("button2").onmouseover = function(){
+			$("button2").className = "buttonShow";
+		};
+		$("button2").onmouseout = function(){
+			$("button2").className = "button";
+		};
+		
+		$("test0").onclick = function(){
+			$("message").style.visibility = "visible";
+		}
+	}
+	</script>
 </head>
-<body>
+<body onload="init()">
 	<div id="sky">
 		<div id="buttons">
-			<div class="button"><img src="1.png" height="40" width="40" class="buttonImg" /><span class="buttonText">星星</span></div>
-			<div class="button"><img src="2.png" height="40" width="40" class="buttonImg" /><span class="buttonText">用户</span></div>
-			<div class="button"><img src="3.png" height="40" width="40" class="buttonImg" /><span class="buttonText">设置</span></div>
+			<div id="tip">菜 单</div>
+			<div class="content">
+				<div><img src="1.png" height="40" width="40" class="button" id="button0" title="模板选择"/></div>
+				<div><img src="2.png" height="40" width="40" class="button" id="button1" title="用户登录"/></div>
+				<div><img src="3.png" height="40" width="40" class="button" id="button2" title="系统设置"/></div>
+			</div>
 		</div>
+		<div class="ball" style="left:20px; top:50px;" id="test0"><p>你好！！</p></div>
+		<div class="ball" style="left:500px; top:0px;"><p>胡乱写些~~</p></div>
+		<div class="ball" style="left:400px; top:350px;"><p>啦啦~~</p></div>
+		<div class="ball" style="left:666px; top:0px;"><p>试一试</p></div>
+		<div class="ball" style="left:230px; top:123px;"><p>test！！！</p></div>
+		<div id="message"><p>这是一个测试啊，胡乱写写东东吧~~~</p></div>
 	</div>
 </body>
 </html>

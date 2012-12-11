@@ -17,26 +17,94 @@ body{
 	min-height:1000px;
 	background:#f9fcff url(../background.jpg) no-repeat;
 	margin:auto;
+	overflow:hidden;
 }
 
 
 /* Buttons */
 #buttons{
-	width:80px;
-	height:120px;
-	/*background:#fff;*/
-	float:right;
+	-moz-border-radius:0px 0px 0px 8px;
+	-webkit-border-radius:0px 0px 0px 8px;
+	border-radius:0px 0px 0px 8px;
+	opacity:0.7;
+	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity = 70);
+	filter:alpha(opacity = 70);
+	background:#fff;
+	position:relative;
+	left:800px;
+	height:130px;
+	width:60px;
+	-moz-transition-duration:500ms;
+	-webkit-transition-duration:500ms;
+	transition-duration:500ms;
+	padding-top:10px;
+}
+
+#tip{
+	-moz-border-radius:8px 0px 0px 8px;
+	-webkit-border-radius:8px 0px 0px 8px;
+	border-radius:8px 0px 0px 8px;
+	background:#000;
+	padding-top:23px;
+	left:-20px;
+	width:20px;
+	height:60px;
+	position:relative;
+	color:#fff;
+}
+
+.content{
+	margin-top:-90px;
+	margin-left:10px;
 }
 
 .button{
+	opacity:0.4;
+	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity = 40);
+	filter:alpha(opacity = 40);
+	cursor:pointer;
+}
+
+.buttonShow{
+	opacity:1;
+	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity = 100);
+	filter:alpha(opacity = 100);
+	cursor:pointer;
+}
+
+/* Ball */
+.ball{
+	background:url(../ball.png);
 	width:80px;
-	height:40px;
+	height:97px;
+	position:relative;
+	cursor:pointer;
 }
 
-.buttonImg{
-	vertical-align:middle;
+.ball p{
+	padding:40px 0px 0px 0px;
+	text-align:center;
 }
 
-.buttonText{
-	font-size:16px;
+/* Message */
+#message{
+	width:400px;
+	height:300px;
+	background:#fff;
+	margin-left:200px;
+	position:fixed;
+	top:200px;
+	opacity:0.8;
+	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity = 80);
+	filter:alpha(opacity = 80);
+	-moz-border-radius:8px 8px 8px 8px;
+	-webkit-border-radius:8px 8px 8px 8px;
+	border-radius:8px 8px 8px 8px;
+	visibility:hidden;
+}
+
+#message p{
+	padding:40px 0px 0px 0px;
+	text-align:center;
+	font-size:20px;
 }
