@@ -3,43 +3,7 @@
 <head>
 <title>givenWall</title> 
 	<link rel="stylesheet" type="text/css" href="css/common.css" />
-	<script>
-	var $ = function(__id){
-		return document.getElementById(__id);
-	}
-
-	function init(){
-		var timeout = -1;
-		$("buttons").onmouseover = function(){
-			$("buttons").style.left = "740px";
-		};
-		$("buttons").onmouseout = function(){
-			$("buttons").style.left = "800px";
-		};
-		$("button0").onmouseover = function(){
-			$("button0").className = "buttonShow";
-		};
-		$("button0").onmouseout = function(){
-			$("button0").className = "button";
-		};
-		$("button1").onmouseover = function(){
-			$("button1").className = "buttonShow";
-		};
-		$("button1").onmouseout = function(){
-			$("button1").className = "button";
-		};
-		$("button2").onmouseover = function(){
-			$("button2").className = "buttonShow";
-		};
-		$("button2").onmouseout = function(){
-			$("button2").className = "button";
-		};
-		
-		$("test0").onclick = function(){
-			$("message").style.visibility = "visible";
-		}
-	}
-	</script>
+	<script src="js/common.js" type="text/javascript"></script>
 </head>
 <body onload="init()">
 	<div id="sky">
