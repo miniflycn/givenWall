@@ -9,7 +9,7 @@
 	/* ID Selector */
 	var $ = function(__id){
 		return document.getElementById(__id);
-	}
+	};
 	
 	/* onReady */
 	var isReady=false;
@@ -85,32 +85,58 @@
 
 function init(){
 	var timeout = -1;
-	$("buttons").onmouseover = function(){
-		$("buttons").style.left = "740px";
+	$("menu").onmouseover = function(){
+		$("menu").className = "menu_show";
 	};
-	$("buttons").onmouseout = function(){
-		$("buttons").style.left = "800px";
+	$("menu").onmouseout = function(){
+		$("menu").className = "menu";
 	};
 	$("button0").onmouseover = function(){
-		$("button0").className = "buttonShow";
+		$("button0").className = "menu_button_show";
 	};
 	$("button0").onmouseout = function(){
-		$("button0").className = "button";
+		$("button0").className = "menu_button";
 	};
 	$("button1").onmouseover = function(){
-		$("button1").className = "buttonShow";
+		$("button1").className = "menu_button_show";
 	};
 	$("button1").onmouseout = function(){
-		$("button1").className = "button";
+		$("button1").className = "menu_button";
 	};
 	$("button2").onmouseover = function(){
-		$("button2").className = "buttonShow";
+		$("button2").className = "menu_button_show";
 	};
 	$("button2").onmouseout = function(){
-		$("button2").className = "button";
+		$("button2").className = "menu_button";
 	};
-		
-	$("test0").onclick = function(){
-		$("message").style.visibility = "visible";
+	$("message0").onmouseover = function(){
+		$("message0").className = "message_show";
+	};
+	$("message0").onmouseout = function(){
+		$("message0").className = "message";
+	};
+	$("message1").onmouseover = function(){
+		$("message1").className = "message_show";
+	};
+	$("message1").onmouseout = function(){
+		$("message1").className = "message";
+	};		
+	$("message2").onmouseover = function(){
+		$("message2").className = "message_show";
+	};
+	$("message2").onmouseout = function(){
+		$("message2").className = "message";
+	};
+	$("message3").onmouseover = function(){
+		$("message3").className = "message_show";
+	};
+	$("message3").onmouseout = function(){
+		$("message3").className = "message";
+	};
+	$("message4").onmouseover = function(){
+		$("message4").className = "message_show";
+	};
+	$("message4").onmouseout = function(){
+		$("message4").className = "message";
 	};
 }

@@ -1,10 +1,10 @@
 ﻿/*
 Theme Name: Common Index
 Author: WhiteSnow
-Author URI: http://www.justany.net/wordpress
+Author URI: http://www.cnblogs.com/justany/
 */
 
-/* Reset default browser CSS. */
+/* Set default browser CSS. */
 body{
 	font-family:"微软雅黑",Arial,Helvetica,sans-serif,"宋体";
 	font-size:12px;
@@ -12,17 +12,17 @@ body{
 	background:#9edaff;
 }
 
-#sky{
+#content{
 	width:800px;
-	min-height:1000px;
+	min-height:900px;
 	background:#f9fcff url(../background.jpg) no-repeat;
 	margin:auto;
 	overflow:hidden;
 }
 
 
-/* Buttons */
-#buttons{
+/* Menu */
+#menu{
 	-moz-border-radius:0px 0px 0px 8px;
 	-webkit-border-radius:0px 0px 0px 8px;
 	border-radius:0px 0px 0px 8px;
@@ -31,7 +31,6 @@ body{
 	filter:alpha(opacity = 70);
 	background:#fff;
 	position:relative;
-	left:800px;
 	height:130px;
 	width:60px;
 	-moz-transition-duration:500ms;
@@ -40,7 +39,15 @@ body{
 	padding-top:10px;
 }
 
-#tip{
+.menu{
+	left:800px;
+}
+
+.menu_show{
+	left:740px;
+}
+
+#menu_tip{
 	-moz-border-radius:8px 0px 0px 8px;
 	-webkit-border-radius:8px 0px 0px 8px;
 	border-radius:8px 0px 0px 8px;
@@ -54,58 +61,90 @@ body{
 	color:#fff;
 }
 
-.content{
+.menu_content{
 	margin-top:-90px;
 	margin-left:10px;
 }
 
-.button{
+.menu_button{
 	opacity:0.4;
 	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity = 40);
 	filter:alpha(opacity = 40);
 	cursor:pointer;
 }
 
-.buttonShow{
+.menu_button_show{
 	opacity:1;
 	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity = 100);
 	filter:alpha(opacity = 100);
 	cursor:pointer;
 }
 
-/* Ball */
-.ball{
-	background:url(../ball.png);
-	width:80px;
-	height:97px;
+/* Message */
+.message{
+	width:380px;
+	height:50px;
 	position:relative;
 	cursor:pointer;
+	background:white;
+	margin:5px 0px 5px -100px;
+	-moz-border-radius:0px 25px 25px 0px;
+	-webkit-border-radius:0px 25px 25px 0px;
+	border-radius:0px 25px 25px 0px;
+	opacity:0.6;
+	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity = 60);
+	filter:alpha(opacity = 60);
 }
 
-.ball p{
-	padding:40px 0px 0px 0px;
-	text-align:center;
+.message_show{
+	width:380px;
+	height:50px;
+	position:relative;
+	cursor:pointer;
+	background:white;
+	margin:5px 0px 5px 0px;
+	-moz-border-radius:0px 25px 25px 0px;
+	-webkit-border-radius:0px 25px 25px 0px;
+	border-radius:0px 25px 25px 0px;
+	opacity:0.9;
+	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity = 90);
+	filter:alpha(opacity = 90);
 }
 
-/* Message */
-#message{
-	width:400px;
-	height:300px;
-	background:#fff;
-	margin-left:200px;
+.message_sum{
+	margin:0px;
+	padding:10px 0 0 0;
+	font-size:18px;
+}
+
+.message_head{
+	float:left;
+	margin:-30px 20px 0 20px;
+	border: 1px solid #ddd;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* MessageBox */
+#messageBox{
+	width:430px;
+	height:600px;
 	position:fixed;
-	top:200px;
+	margin:0 0 0 340px;
+	background:#48a3fe;
 	opacity:0.8;
 	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity = 80);
 	filter:alpha(opacity = 80);
-	-moz-border-radius:8px 8px 8px 8px;
-	-webkit-border-radius:8px 8px 8px 8px;
-	border-radius:8px 8px 8px 8px;
-	visibility:hidden;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border:1px solid #ddd;
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
-#message p{
-	padding:40px 0px 0px 0px;
-	text-align:center;
-	font-size:20px;
+.messageBox_text{
+	width:90%;
+	height:99%;
+	float:right;
+	margin:0 5px 0 0;
+	background:#fff;
 }
