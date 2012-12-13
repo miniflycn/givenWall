@@ -14,12 +14,18 @@ body{
 
 #content{
 	width:800px;
-	min-height:900px;
 	background:#f9fcff url(../background.jpg) no-repeat;
 	margin:auto;
 	overflow:hidden;
 }
 
+#main{
+	min-height:700px;
+}
+
+#footer{
+
+}
 
 /* Menu */
 #menu{
@@ -37,6 +43,7 @@ body{
 	-webkit-transition-duration:500ms;
 	transition-duration:500ms;
 	padding-top:10px;
+	margin-bottom:10px;
 }
 
 .menu{
@@ -131,7 +138,7 @@ body{
 	position:fixed;
 	margin:0 0 0 340px;
 	background:#48a3fe;
-	opacity:0.8;
+	opacity:0;
 	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity = 80);
 	filter:alpha(opacity = 80);
 	-moz-border-radius:8px;
@@ -139,12 +146,30 @@ body{
 	border-radius:8px;
 	border:1px solid #ddd;
     box-shadow:0 5px 10px rgba(0, 0, 0, 0.15);
+	-moz-transition-duration:500ms;
+	-webkit-transition-duration:500ms;
+	transition-duration:500ms;
 }
 
 .messageBox_text{
-	width:90%;
-	height:99%;
+	width:367px;
+	height:574px;
 	float:right;
+	padding:10px;
 	margin:0 5px 0 0;
 	background:#fff;
+	/* overflow:scroll; */
+}
+
+.messageBox_text h2{
+	padding:0;
+	margin: 0 0 10px 0;
+	font: 20px Helvetica,Arial,sans-serif;
+	color: #fff;
+	background:#48a3fe;
+}
+
+.messageBox_text p{
+	padding:0;
+	margin: 0 0 10px 0;
 }

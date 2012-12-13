@@ -1,6 +1,7 @@
 ﻿/*!
  * WhiteSnow JavaScript Library v0.1
- * @author miniflycn
+ * Author: WhiteSnow
+ * Author URI: http://www.cnblogs.com/justany/
  */
 
 (function(__host){
@@ -114,6 +115,9 @@ function init(){
 	};
 	$("message0").onmouseout = function(){
 		$("message0").className = "message";
+	};
+	$("message0").onclick = function(){
+		$("messageBox").style.opacity = "0.8";
 	};
 	$("message1").onmouseover = function(){
 		$("message1").className = "message_show";
